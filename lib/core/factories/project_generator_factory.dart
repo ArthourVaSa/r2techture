@@ -1,11 +1,11 @@
-import 'package:r2techture/core/factories/flutter_project_generator.dart';
-import 'package:r2techture/core/factories/project_generator.dart';
+import 'package:r2techture/core/generator/project_generator.dart';
 import 'package:r2techture/models/r2_config.dart';
 
-class ProjectGeneratorFactory {
+abstract interface class ProjectGeneratorFactory {
 
-  static ProjectGenerator create(R2Config config) {
-    return FlutterProjectGenerator(config);
-  }
+  /// Creates a [ProjectGenerator] instance based on the provided [projectType].
+  ///
+  /// Throws an [UnsupportedError] if the project type is not supported.
+  ProjectGenerator create(R2Config config);
 
 }

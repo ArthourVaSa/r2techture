@@ -17,3 +17,7 @@ run-yaml:
 # Limpiar cobertura (opcional)
 clean:
 	rm -rf coverage
+
+# Generar DI
+assemble:
+	dart run build_runner build --delete-conflicting-outputs

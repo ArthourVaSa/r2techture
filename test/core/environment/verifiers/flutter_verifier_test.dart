@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:mocktail/mocktail.dart';
-import 'package:r2techture/core/environment/verifiers/flutter_verifier.dart';
-import 'package:r2techture/core/logger.dart';
-import 'package:r2techture/utils/process_runner.dart';
+import 'package:r2techture/core/logger/logger.dart';
+import 'package:r2techture/techs/flutter/environment/flutter_verifier.dart';
+import 'package:r2techture/core/runner/process_runner.dart';
 import 'package:test/test.dart';
 
 class MockLogger extends Mock implements Logger {}

@@ -1,8 +1,6 @@
 import 'dart:io';
 
-abstract class ProcessRunner {
-  Future<Process> start(String command, List<String> arguments, {bool runInShell = true});
-}
+import 'package:r2techture/core/runner/process_runner.dart';
 
 class DefaultProcessRunner implements ProcessRunner {
 

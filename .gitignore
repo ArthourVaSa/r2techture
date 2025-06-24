@@ -4,3 +4,6 @@
 
 # Test Coverage
 coverage/
+
+# FVM Version Cache
+.fvm/

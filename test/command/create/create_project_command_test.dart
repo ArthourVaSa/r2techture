@@ -1,10 +1,9 @@
 import 'package:mocktail/mocktail.dart';
-import 'package:r2techture/commands/create/create_project_command.dart';
-import 'package:r2techture/core/factories/project_generator.dart';
-import 'package:r2techture/core/logger.dart';
+import 'package:r2techture/techs/flutter/commands/create/create_flutter_project_command.dart';
+import 'package:r2techture/core/generator/project_generator.dart';
+import 'package:r2techture/core/logger/logger.dart';
 import 'package:r2techture/core/yaml/yaml_loader.dart';
 import 'package:r2techture/models/r2_config.dart';
-import 'package:r2techture/utils/process_runner.dart';
 import 'package:test/test.dart';
 import 'package:yaml/yaml.dart';
 
@@ -37,12 +36,11 @@ void main() {
 
   group('CreateProjectCommand', () {
     test('should execute generate() and logging successfully', () async {
-      final yamlpath = 'test/fixtures/test.yaml';
+      final yamlpath = '/test/fixtures/test.yaml';
 
-      final command = CreateProjectCommand(
+      final command = CreateFlutterProjectCommand(
         yamlPath: yamlpath,
         logger: mockLogger,
-        runner: DefaultProcessRunner(),
         yamlLoader: mockYamlLoader,
       );
 
