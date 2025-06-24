@@ -6,7 +6,7 @@ import 'package:r2techture/core/logger/logger.dart';
 import 'package:r2techture/core/yaml/yaml_loader.dart';
 import 'package:r2techture/models/r2_config.dart';
 import 'package:r2techture/techs/flutter/environment/flutter_environment_verifier.dart';
-import 'package:r2techture/techs/flutter/factory/project_generator_factory.dart';
+import 'package:r2techture/techs/flutter/factory/project_generator_flutter_factory.dart';
 
 class CreateFlutterProjectCommand implements R2Command {
   final String yamlPath;

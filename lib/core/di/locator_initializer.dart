@@ -11,7 +11,7 @@ import 'package:r2techture/core/yaml/yaml_loader.dart';
 import 'package:r2techture/techs/flutter/environment/flutter_environment_verifier.dart';
 import 'package:r2techture/techs/flutter/environment/flutter_verifier.dart';
 import 'package:r2techture/techs/flutter/environment/fvm_verifier.dart';
-import 'package:r2techture/techs/flutter/factory/project_generator_factory.dart';
+import 'package:r2techture/techs/flutter/factory/project_generator_flutter_factory.dart';
 
 class ServiceLocator {
   static final GetIt _getIt = GetIt.instance;
